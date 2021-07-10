@@ -4,6 +4,8 @@
 }
 body{
     background: linear-gradient(100deg, #8e78ff, #fc7d7b);
+    height: 100vh;
+    overflow: hidden;
 }
 .container{
     color: #fff;
