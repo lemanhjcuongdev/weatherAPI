@@ -11,7 +11,7 @@ const sunset = document.querySelector('.sunset');
 const humidity = document.querySelector('.humidity');
 const windSpd = document.querySelector('.wind_spd');
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=ha noi&appid=${apiKey}&units=metric&lang=vi`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=tam đảo&appid=${apiKey}&units=metric&lang=vi`)
     .then(function(res){
         return data = res.json();
     })
