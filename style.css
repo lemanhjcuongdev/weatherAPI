@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(100deg, #8e78ff, #fc7d7b);
+}
+.container{
+    color: #fff;
+    background: linear-gradient(35deg, #00A8C5,#FFFF7E);
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 22px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.searchbar{
+    width:50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    /* display: flex; */
+    /* position: relative; */
+    justify-content: center; /* căn giữa chiều ngang */
+    align-items: center; /* căn giữa chiều dọc */
+    border-bottom: 1px solid #fff;
+}
+.info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+.fas.fa-search{
+    margin-right: 5px;
+}
+#search-input{
+    border: none;
+    outline: none;
+    padding: 3px 3px;
+    background: transparent;
+    color: #555;
+}
+.city_name{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tempurature{
+    font-size: 70px;
+    font-weight: lighter;
+}
+.tempurature::after{
+    content:'°C';
+    position: absolute;
+    font-size: 33px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.additional_part{
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.additional_part .item{
+    padding: 10px 10px;
+    display: inline-block;
+}

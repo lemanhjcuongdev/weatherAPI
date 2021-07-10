@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/5f9729c3be.js" crossorigin="anonymous"></script>
+    <script src="moment.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="main_part">
+            <div class="searchbar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Tìm kiếm thành phố..." id="search-input"/>
+            </div>
+            <div class="info">
+                <h1 class="city_name">Hà Nội</h1>
+                <p class="weather_status">mưa nhỏ</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" class="weather_icon"/>
+                <p class="tempurature">31</p>      
+            </div>
+        </div>
+        <div class="additional_part">
+            <div class="item">
+                <div class="label">MTrời Mọc</div>
+                <div class="value sunrise">6:16</div>
+            </div>
+            <div class="item">
+                <div class="label">MTrời Lặn</div>
+                <div class="value sunset">17:57</div>
+            </div>
+            <div class="item">
+                <div class="label">Độ Ẩm</div>
+                <div class="value"><span class="humidity">75</span>%</div>
+            </div>
+            <div class="item">
+                <div class="label">Gió</div>
+                <div class="value"><span class="wind_spd">13</span> km/h</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
