@@ -11,6 +11,20 @@ const sunset = document.querySelector('.sunset');
 const humidity = document.querySelector('.humidity');
 const windSpd = document.querySelector('.wind_spd');
 
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=ha noi&appid=${apiKey}&units=metric&lang=vi`)
+    .then(function(res){
+        return data = res.json();
+    })
+    .then(function(data){
+        cityName.innerHTML= data.name;
+        weather.innerHTML = data.weather[0].description;
+        icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        temp.innerHTML = Math.round (data.main.temp);
+        sunrise.innerHTML = moment.unix(data.sys.sunrise).format('H:mm');
+        sunset.innerHTML = moment.unix(data.sys.sunset).format('H:mm');
+        humidity.innerHTML = data.main.humidity;
+        windSpd.innerHTML =Math.round((data.wind.speed)*3.6);
+    });
 
 searchInput.addEventListener('change', function(e){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=${apiKey}&units=metric&lang=vi`)
