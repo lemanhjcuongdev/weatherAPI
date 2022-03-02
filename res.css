@@ -1,8 +1,10 @@
 @media only screen and (max-width: 578px) {
-    .container{
-        width:fit-content;
-    }
-    .searchbar{
-        width:fit-content;
-    }
+  .container {
+    width: fit-content;
+  }
+  .searchbar {
+    width: fit-content;
+  }
 }
+
+/* try to update code  */
